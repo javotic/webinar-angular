@@ -1,0 +1,20 @@
+<p>Biblioteca</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(libro of libros; track libro.id){
+            <tr>
+                <td>{{libro.id}}</td>
+                <td>{{libro.title}}</td>
+                <td>{{libro.author}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
